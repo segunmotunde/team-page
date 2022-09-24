@@ -14,15 +14,17 @@
 #container #containerCrew .crew .profile{
     display: inline-flex;
 }
+#containerCrew :nth-child(even){
+    margin-top: 3rem;
+}
+
 #container #header h2{
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 #container #header{
     margin-bottom: 20px;
 }
-#container #header h4{
-    margin-bottom: 10px;
-}
+
 #container #containerCrew {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -57,7 +59,11 @@ writing-mode: vertical-rl;
         #container #header{
             display: flex;
             justify-content: space-between;
+            align-items: flex-start;
             width: 60vw;
             margin: auto;
       }
+      #containerCrew :nth-child(2), #containerCrew :nth-child(5){
+        margin-top: 3rem;
+    }
     }
